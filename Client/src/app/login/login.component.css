@@ -1,0 +1,24 @@
+.formRegister{
+    position: relative;
+    margin-top: 1%;
+    margin-left: 2%;
+    text-align:left;
+}
+
+.formLogin{
+    position: relative;
+    margin-top: 1%;
+    margin-left: 2%;
+    text-align:left;
+}
+
+.Icon{
+    align-items: center;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.buttonTest{
+    position: relative;
+    margin-left: 65%;
+}

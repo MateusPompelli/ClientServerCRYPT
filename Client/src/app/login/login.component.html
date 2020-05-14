@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col-sm-5 formRegister">
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="formLogin">
+                    <div class="modal-body">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend Icon">
+                                <span class="material-icons">account_circle</span>
+                            </div>
+                            <input class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1" id="name" type="text" formControlName="username">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend Icon">
+                                <span class="material-icons">email</span>
+                            </div>
+                            <input class="form-control" placeholder="Email" aria-label="Email"
+                                aria-describedby="basic-addon1" id="email" type="email" formControlName="email">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend Icon">
+                                <span class="material-icons">visibility_off</span>
+                            </div>
+                            <input class="form-control" placeholder="Password" aria-label="Username"
+                                aria-describedby="basic-addon1" id="password" type="password"
+                                formControlName="password">
+                        </div>
+
+                        <button class="btn btn-primary" type="button" (click)="registerUser()">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-5 formLogin" >
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="formLogin">
+                    <div class="modal-body">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend Icon">
+                                <span class="material-icons">email</span>
+                            </div>
+                            <input class="form-control" placeholder="Email" aria-label="Email"
+                                aria-describedby="basic-addon1" id="email" type="email" formControlName="email">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend Icon">
+                                <span class="material-icons">visibility_off</span>
+                            </div>
+                            <input class="form-control" placeholder="Password" aria-label="Username"
+                                aria-describedby="basic-addon1" id="password" type="password"
+                                formControlName="password">
+                        </div>
+
+                        <button class="btn btn-primary" type="button" (click)="loginUser()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="buttonTest">
+    <button type="button" class="btn btn-primary" (click)="testLoggedIn()">TESTE</button>
+</div>
